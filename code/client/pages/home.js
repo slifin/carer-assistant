@@ -8,6 +8,35 @@ export default class Page extends Component
 {
 	render()
 	{
+		const cleanRow =
+		(
+		<tr>
+			<td>
+				<select>
+					<option>None</option>
+					<option>BO / BOWELS OPEN</option>
+					<option>B / BATH</option>
+					<option>BC / BED CHANGE</option>
+				</select>
+			</td>
+			<td>
+				<input type="date" />
+			</td>
+			<td>
+				<textarea style={style.textarea}></textarea>
+			</td>
+			<td>
+				<input type="time" />
+			</td>
+			<td>
+				<input type="text" />
+			</td>
+			<td>
+				<button>Delete Note</button>
+			</td>
+		</tr>);
+
+
 		const markup =
 		(
 			<section className="notes">
@@ -27,31 +56,8 @@ export default class Page extends Component
 								<button>Add Note</button>
 							</th>
 						</tr>
-						<tr>
-							<td>
-								<select>
-									<option>None</option>
-									<option>BO / BOWELS OPEN</option>
-									<option>B / BATH</option>
-									<option>BC / BED CHANGE</option>
-								</select>
-							</td>
-							<td>
-								<input type="date" />
-							</td>
-							<td>
-								<textarea style={style.textarea}></textarea>
-							</td>
-							<td>
-								<input type="time" />
-							</td>
-							<td>
-								<input type="text" />
-							</td>
-							<td>
-								<button>Delete Note</button>
-							</td>
-						</tr>
+						{cleanRow}
+
 					</tbody>
 				</table>
 				<button>
