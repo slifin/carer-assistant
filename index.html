@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hartford care</title>
+	<style type="text/css">
+		body{ padding:0;margin:0; }
+		.title{ display:flex;justify-content: center; }
+		.table { width:100%; border-style: solid; text-align:left; border-color:#333; border-width:1px;border-spacing:0;}
+		td,th {border-style: solid;border-width:1px; padding: 5px;}
+		@media print {
+			button {
+				display: none;
+			}
+		}
+		textarea{width:100%; box-sizing: border-box;}
+	</style>
+</head>
+<body>
+	<h1 class="title">Daily Notes</h1>
+	<table class="table">
+		<tr>
+			<th>Code</th>
+			<th>Date</th>
+			<th>Name <input /></th>
+			<th>Time</th>
+			<th>Signature</th>
+			<th>
+				<button>Add Note</button>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<select>
+					<option>None</option>
+					<option>BO / BOWELS OPEN</option>
+					<option>B / BATH</option>
+					<option>BC / BED CHANGE</option>
+				</select>
+			</td>
+			<td>
+				<input type="date" />
+			</td>
+			<td>
+				<textarea></textarea>
+			</td>
+			<td>
+				<input type="time" />
+			</td>
+			<td>
+				<input type="text">
+			</td>
+			<td>
+				<button>Delete Note</button>
+			</td>
+
+		</tr>
+		<tr>
+			<td>
+				<select>
+					<option>None</option>
+					<option>BO / BOWELS OPEN</option>
+					<option>B / BATH</option>
+					<option>BC / BED CHANGE</option>
+				</select>
+			</td>
+			<td>
+				<input type="date" />
+			</td>
+			<td>
+				<textarea></textarea>
+			</td>
+			<td>
+				<input type="time" />
+			</td>
+			<td>
+				<input type="text">
+			</td>
+			<td>
+				<button>Delete Entry</button>
+			</td>
+		</tr>
+	</table>
+	<button>Print</button>
+	<div>
+		Code explaination
+	</div>
+</body>
+</html>
